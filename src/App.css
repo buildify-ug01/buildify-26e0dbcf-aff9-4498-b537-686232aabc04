@@ -1,0 +1,23 @@
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/golf-course.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.golfer-card {
+  transition: transform 0.3s ease;
+}
+
+.golfer-card:hover {
+  transform: translateY(-5px);
+}
+
+.news-item {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
