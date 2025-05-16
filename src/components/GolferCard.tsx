@@ -1,18 +1,20 @@
 
+import { memo } from 'react'
 import { Link } from 'react-router-dom'
 import { Golfer } from '../types'
+import LazyImage from './LazyImage'
 
 interface GolferCardProps {
   golfer: Golfer
 }
 
-const GolferCard = ({ golfer }: GolferCardProps) => {
+const GolferCard = memo(({ golfer }: GolferCardProps) => {
   return (
     <div className="golfer-card card overflow-hidden">
-      <img 
+      <LazyImage 
         src={golfer.imageUrl} 
         alt={golfer.name} 
-        className="h-64 w-full object-cover"
+        className="h-64 w-full"
       />
       <div className="p-6">
         <h3 className="text-xl font-bold">{golfer.name}</h3>
@@ -24,6 +26,8 @@ const GolferCard = ({ golfer }: GolferCardProps) => {
       </div>
     </div>
   )
-}
+})
+
+GolferCard.displayName = 'GolferCard'
 
 export default GolferCard

@@ -1,20 +1,22 @@
 
+import { memo } from 'react'
 import { News } from '../types'
 import { format } from 'date-fns'
+import LazyImage from './LazyImage'
 
 interface NewsCardProps {
   news: News
 }
 
-const NewsCard = ({ news }: NewsCardProps) => {
+const NewsCard = memo(({ news }: NewsCardProps) => {
   return (
     <div className="news-item py-6">
       <div className="flex flex-col md:flex-row gap-6">
         <div className="md:w-1/3">
-          <img 
+          <LazyImage 
             src={news.imageUrl} 
             alt={news.title} 
-            className="h-48 w-full object-cover rounded-md"
+            className="h-48 w-full rounded-md"
           />
         </div>
         <div className="md:w-2/3">
@@ -35,6 +37,8 @@ const NewsCard = ({ news }: NewsCardProps) => {
       </div>
     </div>
   )
-}
+})
+
+NewsCard.displayName = 'NewsCard'
 
 export default NewsCard

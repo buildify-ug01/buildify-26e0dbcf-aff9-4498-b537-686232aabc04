@@ -1,9 +1,13 @@
 
 import { Link } from 'react-router-dom'
+import { useMemo } from 'react'
 import GolferCard from '../components/GolferCard'
 import { golfers } from '../data/golfers'
 
 const Home = () => {
+  // Memoize golfers to prevent unnecessary re-renders
+  const topGolfers = useMemo(() => golfers, [])
+
   return (
     <div>
       {/* Hero Section */}
@@ -24,7 +28,7 @@ const Home = () => {
         <div className="container">
           <h2 className="text-3xl font-bold mb-8 text-center">Top 5 Golfers</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {golfers.map(golfer => (
+            {topGolfers.map(golfer => (
               <GolferCard key={golfer.id} golfer={golfer} />
             ))}
           </div>
