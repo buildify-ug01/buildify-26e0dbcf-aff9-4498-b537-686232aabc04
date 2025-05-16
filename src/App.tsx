@@ -5,7 +5,6 @@ import Home from './pages/Home'
 import GolferProfile from './pages/GolferProfile'
 import News from './pages/News'
 import NotFound from './pages/NotFound'
-import './App.css'
 
 function App() {
   return (

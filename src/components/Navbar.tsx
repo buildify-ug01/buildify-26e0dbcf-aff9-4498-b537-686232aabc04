@@ -21,7 +21,7 @@ const Navbar = () => {
     <header className={`sticky top-0 z-50 bg-white transition-shadow duration-300 ${isScrolled ? 'shadow-md' : 'shadow'}`}>
       <div className="container py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="text-2xl font-bold text-primary">
+          <Link to="/" className="text-2xl font-bold text-green-600">
             GolfElite
           </Link>
           
@@ -30,8 +30,8 @@ const Navbar = () => {
               to="/" 
               className={({ isActive }) => 
                 isActive 
-                  ? "font-medium text-primary" 
-                  : "text-gray-600 hover:text-primary transition-colors"
+                  ? "font-medium text-green-600" 
+                  : "text-gray-600 hover:text-green-600 transition-colors"
               }
               end
             >
@@ -41,8 +41,8 @@ const Navbar = () => {
               to="/news" 
               className={({ isActive }) => 
                 isActive 
-                  ? "font-medium text-primary" 
-                  : "text-gray-600 hover:text-primary transition-colors"
+                  ? "font-medium text-green-600" 
+                  : "text-gray-600 hover:text-green-600 transition-colors"
               }
             >
               News

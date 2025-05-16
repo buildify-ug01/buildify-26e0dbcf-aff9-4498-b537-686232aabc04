@@ -21,7 +21,7 @@ const GolferProfile = () => {
   return (
     <div className="container py-12">
       <div className="mb-8">
-        <Link to="/" className="text-primary hover:underline">
+        <Link to="/" className="text-green-600 hover:underline">
           ← Back to Home
         </Link>
       </div>
@@ -62,20 +62,20 @@ const GolferProfile = () => {
           <p className="text-gray-500 mb-6">{golfer.nickname}</p>
           
           <div className="prose max-w-none mb-8">
-            <h2>Biography</h2>
-            <p>{golfer.bio}</p>
+            <h2 className="text-2xl font-bold mt-6 mb-4">Biography</h2>
+            <p className="mb-6">{golfer.bio}</p>
             
-            <h2>Career Highlights</h2>
-            <ul>
+            <h2 className="text-2xl font-bold mt-6 mb-4">Career Highlights</h2>
+            <ul className="list-disc pl-5 mb-6">
               {golfer.careerHighlights.map((highlight, index) => (
-                <li key={index}>{highlight}</li>
+                <li key={index} className="mb-1">{highlight}</li>
               ))}
             </ul>
             
-            <h2>Major Championships</h2>
-            <ul>
+            <h2 className="text-2xl font-bold mt-6 mb-4">Major Championships</h2>
+            <ul className="list-disc pl-5 mb-6">
               {golfer.majorChampionships.map((major, index) => (
-                <li key={index}>{major}</li>
+                <li key={index} className="mb-1">{major}</li>
               ))}
             </ul>
           </div>

@@ -8,7 +8,7 @@ interface NewsCardProps {
 
 const NewsCard = ({ news }: NewsCardProps) => {
   return (
-    <div className="news-item py-6">
+    <div className="border-b border-gray-200 py-6 last:border-b-0">
       <div className="flex flex-col md:flex-row gap-6">
         <div className="md:w-1/3">
           <img 
@@ -28,7 +28,7 @@ const NewsCard = ({ news }: NewsCardProps) => {
             href={news.url} 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="text-primary font-medium hover:underline"
+            className="text-green-600 font-medium hover:underline"
           >
             Read full article →
           </a>

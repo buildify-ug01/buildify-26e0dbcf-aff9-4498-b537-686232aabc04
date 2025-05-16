@@ -8,7 +8,7 @@ interface GolferCardProps {
 
 const GolferCard = ({ golfer }: GolferCardProps) => {
   return (
-    <div className="golfer-card card overflow-hidden transition-transform duration-300 hover:-translate-y-1 hover:shadow-md">
+    <div className="card overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
       <img 
         src={golfer.imageUrl} 
         alt={golfer.name} 
