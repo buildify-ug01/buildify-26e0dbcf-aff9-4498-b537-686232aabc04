@@ -10,7 +10,7 @@ interface GolferCardProps {
 
 const GolferCard = memo(({ golfer }: GolferCardProps) => {
   return (
-    <div className="golfer-card card overflow-hidden">
+    <div className="golfer-card card overflow-hidden transition-transform duration-300 hover:-translate-y-1 hover:shadow-md">
       <LazyImage 
         src={golfer.imageUrl} 
         alt={golfer.name} 

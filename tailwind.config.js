@@ -29,4 +29,8 @@ export default {
     require('@tailwindcss/typography'),
     require('tailwindcss-animate'),
   ],
+  // Tailwind v3 JIT mode is enabled by default
+  future: {
+    hoverOnlyWhenSupported: true, // Better performance on mobile
+  },
 }

@@ -11,10 +11,10 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="hero py-20 text-center">
+      <section className="hero py-20 text-center bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/golf-course.jpg")' }}>
         <div className="container">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Welcome to GolfElite</h1>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Welcome to GolfElite</h1>
+          <p className="text-xl mb-8 max-w-3xl mx-auto text-white">
             Your premier destination for information about the world's top golfers.
           </p>
           <Link to="/news" className="btn btn-primary">

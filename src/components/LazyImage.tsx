@@ -58,11 +58,11 @@ const LazyImage = ({
 
   return (
     <div 
-      className={`relative overflow-hidden ${className}`}
+      className={`relative overflow-hidden bg-gray-200 ${className}`}
       style={{ backgroundColor: placeholderColor }}
     >
       {!isLoaded && (
-        <div className="absolute inset-0 bg-gray-200 animate-pulse"></div>
+        <div className="absolute inset-0 animate-pulse"></div>
       )}
       <img
         ref={setImageRef}
@@ -71,6 +71,7 @@ const LazyImage = ({
         className={`w-full h-full object-cover transition-opacity duration-300 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
         onLoad={() => setIsLoaded(true)}
         loading="lazy"
+        decoding="async"
       />
     </div>
   )
