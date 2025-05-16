@@ -1,16 +1,10 @@
 
 import { useParams, Link } from 'react-router-dom'
-import { useMemo } from 'react'
 import { golfers } from '../data/golfers'
-import LazyImage from '../components/LazyImage'
 
 const GolferProfile = () => {
   const { id } = useParams<{ id: string }>()
-  
-  const golfer = useMemo(() => 
-    golfers.find(g => g.id === id), 
-    [id]
-  )
+  const golfer = golfers.find(g => g.id === id)
 
   if (!golfer) {
     return (
@@ -34,10 +28,10 @@ const GolferProfile = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
         <div className="md:col-span-1">
-          <LazyImage 
+          <img 
             src={golfer.imageUrl} 
             alt={golfer.name} 
-            className="w-full rounded-lg shadow-md mb-6 aspect-[3/4]"
+            className="w-full rounded-lg shadow-md mb-6"
           />
           
           <div className="bg-gray-50 p-6 rounded-lg shadow-sm">

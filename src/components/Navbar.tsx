@@ -5,7 +5,6 @@ import { Link, NavLink } from 'react-router-dom'
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false)
 
-  // Add scroll effect for better UX
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10)

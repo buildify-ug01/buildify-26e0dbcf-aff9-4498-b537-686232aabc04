@@ -1,18 +1,14 @@
 
-import { useMemo } from 'react'
 import NewsCard from '../components/NewsCard'
 import { news } from '../data/news'
 
 const News = () => {
-  // Memoize news to prevent unnecessary re-renders
-  const newsItems = useMemo(() => news, [])
-
   return (
     <div className="container py-12">
       <h1 className="text-3xl font-bold mb-8">Latest Golf News</h1>
       
       <div className="mb-12">
-        {newsItems.map(item => (
+        {news.map(item => (
           <NewsCard key={item.id} news={item} />
         ))}
       </div>

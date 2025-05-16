@@ -6,7 +6,7 @@ export const golfers: Golfer[] = [
     id: "scottie-scheffler",
     name: "Scottie Scheffler",
     nickname: "The New King",
-    imageUrl: "/images/scottie-scheffler.jpg",
+    imageUrl: "https://placehold.co/400x600/10b981/FFFFFF?text=Scottie+Scheffler",
     worldRanking: 1,
     country: "United States",
     birthDate: "June 21, 1996",
@@ -23,13 +23,13 @@ export const golfers: Golfer[] = [
     majorChampionships: [
       "Masters Tournament (2022, 2024)"
     ],
-    videoUrl: "https://www.youtube.com/embed/example1"
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: "rory-mcilroy",
     name: "Rory McIlroy",
     nickname: "Rors",
-    imageUrl: "/images/rory-mcilroy.jpg",
+    imageUrl: "https://placehold.co/400x600/10b981/FFFFFF?text=Rory+McIlroy",
     worldRanking: 2,
     country: "Northern Ireland",
     birthDate: "May 4, 1989",
@@ -48,13 +48,13 @@ export const golfers: Golfer[] = [
       "PGA Championship (2012, 2014)",
       "The Open Championship (2014)"
     ],
-    videoUrl: "https://www.youtube.com/embed/example2"
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: "jon-rahm",
     name: "Jon Rahm",
     nickname: "Rahmbo",
-    imageUrl: "/images/jon-rahm.jpg",
+    imageUrl: "https://placehold.co/400x600/10b981/FFFFFF?text=Jon+Rahm",
     worldRanking: 3,
     country: "Spain",
     birthDate: "November 10, 1994",
@@ -72,13 +72,13 @@ export const golfers: Golfer[] = [
       "U.S. Open (2021)",
       "Masters Tournament (2023)"
     ],
-    videoUrl: "https://www.youtube.com/embed/example3"
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: "xander-schauffele",
     name: "Xander Schauffele",
     nickname: "X-Man",
-    imageUrl: "/images/xander-schauffele.jpg",
+    imageUrl: "https://placehold.co/400x600/10b981/FFFFFF?text=Xander+Schauffele",
     worldRanking: 4,
     country: "United States",
     birthDate: "October 25, 1993",
@@ -95,13 +95,13 @@ export const golfers: Golfer[] = [
     majorChampionships: [
       "PGA Championship (2023)"
     ],
-    videoUrl: "https://www.youtube.com/embed/example4"
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: "viktor-hovland",
     name: "Viktor Hovland",
     nickname: "The Norwegian Sensation",
-    imageUrl: "/images/viktor-hovland.jpg",
+    imageUrl: "https://placehold.co/400x600/10b981/FFFFFF?text=Viktor+Hovland",
     worldRanking: 5,
     country: "Norway",
     birthDate: "September 18, 1997",
@@ -116,6 +116,6 @@ export const golfers: Golfer[] = [
       "U.S. Amateur Champion (2018)"
     ],
     majorChampionships: [],
-    videoUrl: "https://www.youtube.com/embed/example5"
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   }
 ]
